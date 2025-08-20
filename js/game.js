@@ -61,8 +61,8 @@ const gameWidth = gameWrapper.clientWidth;
 const gameHeight = gameWrapper.clientHeight;
 let fallenPiecesCount = 0;
 const colorUnlockThresholds = [
-  2, 4, 8, 16, 32, 64, 128, 256, 512, 1024, 2048, 4096, 8192, 16384, 32768,
-  65536, 131072,
+  32, 64, 128, 256, 512, 1024, 2048, 4096, 8192, 16384, 32768, 65536, 131072,
+  262144, 524288, 1048576,
 ];
 const render = Matter.Render.create({
   element: gameContainer,
@@ -912,3 +912,4 @@ window.addEventListener("load", function () {
     document.body.style.overflow = "hidden";
   }
 });
+
